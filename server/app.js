@@ -7,7 +7,7 @@ var urlencodedParser = bodyParser.urlencoded({extended: false});
 var portDecision = process.env.PORT || 8080;
 
 app.listen( portDecision, function( req, res ){
-  console.log( 'server listening on port 8080' );
+  // console.log( 'server listening on port 8080' );
 }); //end app.listen
 
 app.get('/', function(req, res){
