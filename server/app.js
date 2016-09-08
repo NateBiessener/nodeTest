@@ -4,7 +4,9 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 
-app.listen( '8080', 'localhost', function( req, res ){
+var portDecision = process.env.PORT || 8080;
+
+app.listen( portDecision, function( req, res ){
   console.log( 'server listening on port 8080' );
 }); //end app.listen
 
